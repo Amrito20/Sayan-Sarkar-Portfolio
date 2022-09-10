@@ -1,0 +1,11 @@
+.container{
+    margin-bottom: 100px;
+}
+.text-deco{
+    color: rgb(0, 81, 255);
+}
+.text-color {
+    color: dimgray
+}
+.bg-img{
+    background-image: url(/images/Untitled\ design.png);
