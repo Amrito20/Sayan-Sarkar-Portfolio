@@ -25,16 +25,14 @@ document.addEventListener('DOMContentLoaded', function() {
  * Theme Toggle Functionality
  */
 function initializeTheme() {
-    // Check for saved theme preference or default to dark theme
+    // Check for saved theme preference or default to dark theme for first-time visitors
     const savedTheme = localStorage.getItem('theme') || 'dark';
-    
-    // Always start with dark theme as primary
-    document.body.classList.add('dark-theme');
     
     // Update all theme icons
     const allThemeIcons = document.querySelectorAll('.theme-icon');
     
     if (savedTheme === 'light') {
+        // Light theme: remove dark-theme class to activate light theme styles
         document.body.classList.remove('dark-theme');
         allThemeIcons.forEach(icon => {
             if (icon.textContent) {
@@ -44,6 +42,7 @@ function initializeTheme() {
             }
         });
     } else {
+        // Dark theme (default): add dark-theme class to ensure dark theme is active
         document.body.classList.add('dark-theme');
         allThemeIcons.forEach(icon => {
             if (icon.textContent) {
