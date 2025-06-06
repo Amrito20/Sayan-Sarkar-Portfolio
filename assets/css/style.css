@@ -30,6 +30,17 @@ body:not(.dark-theme) {
     --card-bg: #f8f9fa;
     --border-color: #e9ecef;
     --shadow: rgba(0, 0, 0, 0.1);
+    
+    /* Professional gradient background */
+    background: linear-gradient(135deg, 
+        #f8f9fa 0%, 
+        #e9ecef 25%, 
+        #ffffff 50%, 
+        #f1f3f4 75%, 
+        #e8f0fe 100%);
+    background-attachment: fixed;
+    background-size: 400% 400%;
+    animation: lightThemeGradient 15s ease infinite;
 }
 
 /* ===== GLOBAL STYLES ===== */
@@ -1943,6 +1954,24 @@ body:not(.dark-theme) .footer::before {
     }
 }
 
+@keyframes lightThemeGradient {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes mobileThemeToggleBounce {
+    0%, 100% {
+        transform: translateY(-50%);
+    }
+    50% {
+        transform: translateY(-50%) translateY(-2px);
+    }
+}
+
 /* ===== RESPONSIVE DESIGN ===== */
 
 /* Tablet Styles */
@@ -1953,6 +1982,7 @@ body:not(.dark-theme) .footer::before {
 
     .mobile-theme-toggle {
         display: flex !important;
+        animation: mobileThemeToggleBounce 2s ease-in-out infinite;
     }
 
     .page-title {
@@ -2087,6 +2117,7 @@ body:not(.dark-theme) .footer::before {
 
     .mobile-theme-toggle {
         display: flex !important;
+        animation: mobileThemeToggleBounce 2s ease-in-out infinite;
     }
 
     .hamburger {
