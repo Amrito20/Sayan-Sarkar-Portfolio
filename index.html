@@ -9,6 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    
+    <!-- Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 </head>
 <body class="dark-theme">
     <!-- Navigation Bar -->
@@ -56,36 +61,39 @@
     <main>
         <!-- Hero Section -->
         <section class="hero" id="home">
+            <div class="vanta-background" id="vanta-bg"></div>
             <div class="hero-container">
                 <div class="hero-content">
                     <div class="hero-text">
-                        <h1 class="hero-title">Sayan Sarkar</h1>
-                        <p class="hero-description">
-                            Computer Operator & Microsoft Office Specialist with expertise in administrative operations, 
-                            document creation, and data management. Passionate about leveraging technology to streamline 
-                            organizational processes and deliver exceptional results.
-                        </p>
-                        <div class="hero-buttons">
-                            <a href="assets/documents/Sayan_Sarkar_CV.pdf" class="btn btn-primary" target="_blank">
-                                Download CV
-                            </a>
-                            <a href="#about-preview" class="btn btn-secondary">
-                                About Me
-                            </a>
-                        </div>
-                        <div class="social-links">
-                            <a href="https://www.linkedin.com/in/sarkar222sayan/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link" title="LinkedIn" target="_blank">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="https://www.instagram.com/sarkar222sayan/" class="social-link" title="Instagram" target="_blank">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://www.facebook.com/sarkar222sayan" class="social-link" title="Facebook" target="_blank">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="https://twitter.com/sayansarkar" class="social-link" title="X (Twitter)" target="_blank">
-                                <i class="fab fa-twitter"></i>
-                            </a>
+                        <div class="hero-text-card">
+                            <h1 class="hero-title">Sayan Sarkar</h1>
+                            <p class="hero-description">
+                                Computer Operator & Microsoft Office Specialist with expertise in administrative operations, 
+                                document creation, and data management. Passionate about leveraging technology to streamline 
+                                organizational processes and deliver exceptional results.
+                            </p>
+                            <div class="hero-buttons">
+                                <a href="assets/documents/Sayan_Sarkar_CV.pdf" class="btn btn-primary" target="_blank">
+                                    Download CV
+                                </a>
+                                <a href="#about-preview" class="btn btn-secondary">
+                                    About Me
+                                </a>
+                            </div>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/sarkar222sayan/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link" title="LinkedIn" target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://www.instagram.com/sarkar222sayan/" class="social-link" title="Instagram" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.facebook.com/sarkar222sayan" class="social-link" title="Facebook" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://twitter.com/sayansarkar" class="social-link" title="X (Twitter)" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="hero-image">
@@ -210,27 +218,29 @@
         <div class="container">
             <div class="footer-content">
                 <p>&copy; 2025 Sayan Sarkar. All rights reserved.</p>
-                            <div class="footer-social">
+                <div class="footer-social">
                 <a href="mailto:sayansarkar338@gmail.com" class="footer-social-link" title="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 <a href="https://www.linkedin.com/in/sarkar222sayan/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="footer-social-link" title="LinkedIn" target="_blank">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
                 <a href="https://www.instagram.com/sarkar222sayan/" class="footer-social-link" title="Instagram" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
+                        <i class="fab fa-instagram"></i>
+                    </a>
                 <a href="https://www.facebook.com/sarkar222sayan" class="footer-social-link" title="Facebook" target="_blank">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://twitter.com/sayansarkar" class="footer-social-link" title="X (Twitter)" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/sayansarkar" class="footer-social-link" title="X (Twitter)" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/page-animations.js"></script>
 </body>
 </html> 

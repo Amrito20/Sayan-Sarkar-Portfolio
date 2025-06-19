@@ -8,6 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    
+    <!-- Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 </head>
 <body class="dark-theme">
     <!-- Navigation Bar -->
@@ -55,12 +60,15 @@
     <main>
         <!-- About Hero Section -->
         <section class="about-hero">
+            <div class="vanta-background" id="vanta-bg"></div>
             <div class="container">
                 <div class="about-hero-content">
-                    <h1 class="page-title">About Me</h1>
-                    <p class="page-subtitle">
-                        Dedicated professional with a passion for technology and continuous learning
-                    </p>
+                    <div class="hero-text-card">
+                        <h1 class="page-title">About Me</h1>
+                        <p class="page-subtitle">
+                            Dedicated professional with a passion for technology and continuous learning
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -266,5 +274,7 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/page-animations.js"></script>
 </body>
 </html> 

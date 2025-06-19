@@ -97,6 +97,14 @@ function toggleTheme() {
             }, 300);
         }
     });
+
+    // Update Vanta background theme if available
+    if (window.portfolioAnimations && window.portfolioAnimations.updateVantaTheme) {
+        window.portfolioAnimations.updateVantaTheme();
+    }
+
+    // Dispatch custom event for theme change
+    document.dispatchEvent(new CustomEvent('themeChanged'));
 }
 
 /**
